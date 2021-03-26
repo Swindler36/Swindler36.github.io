@@ -16,3 +16,4 @@ plugins:
 collections:
   portfolio:
     output: true
+    permalink: /portfolio/:title/
