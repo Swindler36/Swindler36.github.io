@@ -119,27 +119,13 @@
 			
 			</div>
 			<hr>
-			<h2>Achievements</h2>
-			<hr>
-			<!--
-			<ul>
-				<li></li>	
-			</ul>
-			<hr>
-			-->
 			<h2>Publications</h2>
 			<hr>
-			<script>
-				var html = "";
-				var api;
-				async function get_feed(){
-					await fetch("https://medium.com/feed/stingy-developer").then(response => response.text()).then(str => (new window.DOMParser()).parseFromString(str, "text/xml")).then(data => api = data)
-					console.log(api);
-				}
-				get_feed();
-				
-				
-			</script>
+			<div>
+				<a href="https://medium.com/stingy-developer">Stingy Developer - My Medium Publication</a>
+				<a href="https://cover.js.org/wp_theme_docs/what-is-a-theme/">My Wordpress Theme Development Guide(In Progress)</a>	
+				<a href="#">My Wordpress Plugin Development Guide(Soon)</a>	
+			</div>
 		</div>
 	</body>
 	<div class="footer-margin"></div>
