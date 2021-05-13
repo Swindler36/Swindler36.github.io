@@ -15,9 +15,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<meta name="description" content="Greg (Grzegorz) Surma - Portfolio; Machine Learning, Computer Vision, Self-Driving Cars, AI">
-		<meta name="keywords" content="machine learning, deep learning, tensorflow, pytorch, cv, tensor-flow, keras, computer vision, iOS, macOS, app, game, apple, ai, native, freelance, software, dev, developer, iphone, ipad, programming, computers, swift, objective-c, python, misc, artificial intelligence, computer, it, internet, engineering, development, self-driving cars, autonomous cars, self-driving">
-		<meta name="author" content="Greg (Grzegorz) Surma">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="keywords" content=" app,freelance, software, dev, developer, programming, computers, python, computer, it, internet, engineering, development">
+		<meta name="author" content="Furkan Zerman">
 
 		<title>Furkan Zerman - Portfolio</title>
 
@@ -43,7 +43,7 @@
 				  			<a class="nav-link" href="/">Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@gsurma">Blog</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://medium.com/stingy-developer">Blog</a>
 						</li>
 						<li class="nav-item">
 				  			<a class="nav-link" href="/contact">Contact</a>
@@ -59,9 +59,10 @@
 			</h1>
 
 			<h2>CV</h2>
+			<hr>
+			<a href="#">See My CV</a>
+			<hr>
 			<h2>Projects</h2>
-			<h2>Achievements</h2>
-			<h2>Publications</h2>
 			<br>
 
 			<div class="projectFilter">
@@ -117,6 +118,27 @@
 			
 			
 			</div>
+			<hr>
+			<h2>Achievements</h2>
+			<hr>
+			<!--
+			<ul>
+				<li></li>	
+			</ul>
+			<hr>
+			-->
+			<h2>Publications</h2>
+			<hr>
+			<script>
+				var html = "";
+				var api;
+				async function get(){
+					await fetch("https://medium.com/feed/stingy-developer").then(response => response.text()).then(str => (new window.DOMParser()).parseFromString(str, "text/xml")).then(data => api = data)
+				}
+				await get();
+				console.log(api);
+				document.write(html)
+			</script>
 		</div>
 	</body>
 	<div class="footer-margin"></div>
