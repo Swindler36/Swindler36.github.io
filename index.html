@@ -132,12 +132,13 @@
 			<script>
 				var html = "";
 				var api;
-				async function get(){
+				async function get_feed(){
 					await fetch("https://medium.com/feed/stingy-developer").then(response => response.text()).then(str => (new window.DOMParser()).parseFromString(str, "text/xml")).then(data => api = data)
+					console.log(api);
 				}
-				await get();
-				console.log(api);
-				document.write(html)
+				get_feed();
+				
+				
 			</script>
 		</div>
 	</body>
