@@ -7,5 +7,6 @@ description: Faster Blogger Theme Builder
 layout: default
 ---
 
-## Blogger Template Builder
+![blogger theme builder](/images/logo.png)
 
+**Blogger Template Builder** is designed fastest Blogger Template Builder. This engine is in development. Planned to release 7.07.2021. 
